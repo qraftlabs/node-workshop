@@ -1,6 +1,6 @@
-## Módulo 1 - Introducción
+## Módulo 2 - Eventos
 
-En este módulo aprenderemos a utilizar eventos en node.js, particularmente la clase [EventEmitter](http://nodejs.org/api/events.html).
+En este módulo aprenderemos a utilizar **eventos** en node.js. Particularmente la clase [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
 ## Ejercicio 01
 
