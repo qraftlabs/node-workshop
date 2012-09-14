@@ -10,5 +10,6 @@
     "url": "git://github.com/qraftlabs/node-workshop.git"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }

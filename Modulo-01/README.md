@@ -14,7 +14,7 @@ Pasos:
 
 ## Ejercicio 02
 
-Leyendo archivos asincronamente. Alguien cometió el error de escribir este código de manera sincrona y bloqueante. 
+Alguien cometió el error de escribir este código de manera sincrona y bloqueante. 
 Intentemos convertirlo a non-blocking.
 
 ** Tip: "Sync" es feo **

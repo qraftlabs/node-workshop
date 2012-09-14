@@ -5,13 +5,16 @@ var args = process.argv.splice(2,3),
 
 var exec = require("child_process").exec,
     path = require("path"),
-    exerciseFile = path.join(__dirname, "Modulo-" + module , "ejercicios", exercise, 
+    exerciseFile = path.join(__dirname, "Modulo-" + module, exercise, 
           runSolved ?  "solucion.js" : "ejercicio.js");
 
-console.log("running " + exerciseFile);
 
-var proc = exec("node " + exerciseFile); 
+require(exerciseFile);
 
-proc.stdout.pipe(process.stdout);
-proc.stderr.pipe(process.stderr);
-process.stdin.pipe(proc.stdin);
+// console.log("running:\n node " + exerciseFile);
+
+// var proc = exec("node " + exerciseFile); 
+
+// proc.stdout.pipe(process.stdout);
+// proc.stderr.pipe(process.stderr);
+// process.stdin.pipe(proc.stdin);

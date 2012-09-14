@@ -35,6 +35,7 @@ $ git clone https://github.com/isaacs/nave.git ~/nave
 $ ~/nave/nave.sh install 0.8.5 
 $ ~/nave/nave.sh usemain 0.8.5 
 ```
+
 ## Como ejecutar los ejercicios
 
 Se pueden ejecutar con node directamente:
