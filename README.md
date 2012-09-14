@@ -13,9 +13,9 @@ Este repositorio contiene ejemplos y explicaciones para cada uno de los 9 módul
     -   linux via nave  
 Como instalar con nave:
 ```
-$ git clone https://github.com/isaacs/nave.git ~/nave
-$ ~/nave/nave.sh install 0.8.5
-$ ~/nave/nave.sh usemain 0.8.5
+$ git clone https://github.com/isaacs/nave.git ~/nave 
+$ ~/nave/nave.sh install 0.8.5 
+$ ~/nave/nave.sh usemain 0.8.5 
 ```
 
 2. un editor de texto para programadores. Recomendamos: 
