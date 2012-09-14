@@ -12,15 +12,18 @@ Este repositorio contiene ejemplos y explicaciones para cada uno de los 9 módul
     -  [linux via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) 
     -  linux via nave  
 
+
 2. un editor de texto para programadores. Recomendamos: 
     -  Sublime Text 2 http://www.sublimetext.com/2 
     -  Textmate (solo OSx) http://macromates.com/ 
     -  E-TextEditor (solo Windows) http://www.e-texteditor.com/ 
 
+
 3. Git 
     -  windows y osx: http://git-scm.com/downloads 
     -  linux instalar con apt-get, yum o el package manager que utilice la distribución.
-     
+
+
 4. instalar los siguientes paquetes con npm globalmente:
 
     npm install mocha node-inspector -g
