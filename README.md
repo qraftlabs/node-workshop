@@ -6,27 +6,32 @@ Este repositorio contiene ejemplos y explicaciones para cada uno de los 9 módul
 
 # Herramientas necesarias para este workshop
 
-1.   node.js http://nodejs.org/download/ versión 0.8.X, recomendamos última versión estable 
-    -   windows: utilizar distribución binaria 
-    -   osx: utilizar distribución binaria o nave 
-    -   [linux via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) 
-    -   linux via nave  
-Como instalar con nave:
+1. node.js http://nodejs.org/download/ versión 0.8.X, recomendamos última versión estable 
+    -  windows: utilizar distribución binaria 
+    -  osx: utilizar distribución binaria o nave 
+    -  [linux via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) 
+    -  linux via nave  
+
+2. un editor de texto para programadores. Recomendamos: 
+    -  Sublime Text 2 http://www.sublimetext.com/2 
+    -  Textmate (solo OSx) http://macromates.com/ 
+    -  E-TextEditor (solo Windows) http://www.e-texteditor.com/ 
+
+3. Git 
+    -  windows y osx: http://git-scm.com/downloads 
+    -  linux instalar con apt-get, yum o el package manager que utilice la distribución.
+     
+4. instalar los siguientes paquetes con npm globalmente:
+
+    npm install mocha node-inspector -g
+
+Instalación de node con nave
+
 ```
 $ git clone https://github.com/isaacs/nave.git ~/nave 
 $ ~/nave/nave.sh install 0.8.5 
 $ ~/nave/nave.sh usemain 0.8.5 
 ```
-
-2. un editor de texto para programadores. Recomendamos: 
-    -Sublime Text 2 http://www.sublimetext.com/2 
-    -Textmate (solo OSx) http://macromates.com/ 
-    -E-TextEditor (solo Windows) http://www.e-texteditor.com/ 
-
-3. instalar los siguientes paquetes con npm globalmente:
-
-    npm install mocha node-inspector -g
-
 
 # Archivos md
 
