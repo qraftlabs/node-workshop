@@ -9,4 +9,6 @@ http.createServer(function(request, response){
     response.end();
   });
 
-}).listen(8080);
+}).listen(8080, function(){
+  console.log("server is in " + "http://localhost:8080");
+});
