@@ -41,7 +41,7 @@ $ ~/nave/nave.sh usemain 0.8.5
 Se pueden ejecutar con node directamente:
 
 ```
-node Modulo-01/ejercicios/01/ejercicio.js
+node Modulo-01/01/ejercicio.js
 ```
 o utilizando run.js: 
 
