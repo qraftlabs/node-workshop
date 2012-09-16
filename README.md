@@ -35,22 +35,23 @@ $ git clone https://github.com/isaacs/nave.git ~/nave
 $ ~/nave/nave.sh install 0.8.5 
 $ ~/nave/nave.sh usemain 0.8.5 
 ```
-
 ## Como ejecutar los ejercicios
 
-Se pueden ejecutar con node directamente:
+Clonar este repositorio con git clone y luego ejecutar ```npm install``` en la carpeta clonada. 
+
+Los ejercicios se pueden ejecutar con node:
 
 ```
 node Modulo-01/01/ejercicio.js
 ```
+
 o utilizando run.js: 
 
 ```
 node run.js 01 02
 ```
 
-ejecuta el ejercicio 2 del módulo 1.  
-También se puede ejecutar el ejercicio ya resuelto de la siguiente manera
+ejecuta el ejercicio 2 del módulo 1. También se puede ejecutar el ejercicio ya resuelto de la siguiente manera
 
 ```
 node run.js 01 02 --solved
