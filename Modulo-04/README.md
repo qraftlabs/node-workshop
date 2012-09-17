@@ -1,4 +1,4 @@
-## Módulo 3 - Streams
+## Módulo 4 - Módulos y Paquetes
 
 En este módulo aprenderemos a modularizar nuestro código.
 
