@@ -1,0 +1,13 @@
+{
+  "name": "twitter-foo",
+  "version": "0.0.1",
+  "description": "A twitter search library",
+  "main": "lib/twitter.js",
+  "repository": "",
+  "scripts": [],
+  "author": "Tu Nombre <tu@mail.com> (http://tu.blog.com)",
+  "license": "MIT",
+  "dependencies": {
+    "request": "~2.11.1"
+  }
+}

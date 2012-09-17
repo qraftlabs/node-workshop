@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+require("colors");
+
+function showUsage(){
+  console.log("usage \n".bold, "twitter-cli search <term>".magenta.bold);
+}
+
+var command = process.argv[2];
+if(command !== "search"){
+  return showUsage();
+}
+
+var searchTerm = process.argv[3];
+if(!searchTerm){
+  return showUsage();
+}
+
+var twitter = require("twitter-foo");
+console.log("searching for " + searchTerm.bold.green);
+twitter.search(searchTerm, function(err, result){
+  result.forEach(function(tweet){
+    console.log(tweet.text, " by ", ("@" + tweet.from_user).bold.yellow);
+  });
+});
