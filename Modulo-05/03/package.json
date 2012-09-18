@@ -1,0 +1,16 @@
+{
+  "name": "test-demo",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "ejercicio.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "should": "~1.1.0",
+    "mocha": "~1.4.2"
+  }
+}
