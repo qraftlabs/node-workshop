@@ -1,7 +1,7 @@
-var sumafile = require("../sumafile");
+var sumfile = require("../sumfile");
 var fs = require("fs");
 
-describe("suma file", function(){
+describe("sum file", function(){
   
   beforeEach(function(done){
     this.fixtureFile = __dirname + "/fixture-1.txt";
@@ -21,8 +21,8 @@ describe("suma file", function(){
   });
 
   it("should return the sume of all lines", function(done){
-    sumafile(this.fixtureFile, function(err, suma){
-      suma.should.be.eql(200);
+    sumfile(this.fixtureFile, function(err, sum){
+      sum.should.be.eql(200);
       done();
     });
   });
