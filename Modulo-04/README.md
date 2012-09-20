@@ -1,4 +1,4 @@
-## Módulo 4 - Módulos y Paquetes
+# Módulo 4 - Módulos y Paquetes
 
 En este módulo aprenderemos a modularizar nuestro código.
 

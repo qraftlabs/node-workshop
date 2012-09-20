@@ -1,4 +1,4 @@
-## Módulo 1 - Introducción
+# Módulo 1 - Introducción
 
 En este módulo aprenderemos conceptos básicos de node.js y el event loop. Los ejemplos se basan en lecto/escritura de archivos y servidores web.
 
@@ -26,7 +26,7 @@ Deberas leer el archivo 'index.html' asincronamente en cada request, una vez le�
 
 ## Ejercicio 04
 
-La idea de este ejercicio es hacer un servidor web, similar al ejercicio anterior, pero que sirva el contenido de la carpeta public de tal forma que podamos navegar a http://localhost:8080/index.html
-y http://localhost:8080/about.html. Si navegamos a un archivo que no existe, debería devolver 404 con el mensaje "not-found".
+La idea de este ejercicio es hacer un servidor web, similar al ejercicio anterior, pero que sirva el contenido de la carpeta public de tal forma que podamos navegar a http://localhost:8001/index.html
+y http://localhost:8001/about.html. Si navegamos a un archivo que no existe, debería devolver 404 con el mensaje "not-found".
 
 Tips: usar [request.url](http://nodejs.org/api/http.html#http_request_url), verificar el parametro 'error' de readFile, [path.join](http://nodejs.org/api/path.html#path_path_join_path1_path2) puede ser una buena forma de combinar paths.

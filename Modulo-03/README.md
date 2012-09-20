@@ -1,4 +1,4 @@
-## Módulo 3 - Streams
+# Módulo 3 - Streams
 
 En este módulo aprenderemos a utilizar [streams](http://nodejs.org/api/stream.html) en node.js.
 

@@ -11,5 +11,9 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "express": "~3.0.0rc4",
+    "ejs": "~0.8.3",
+    "jade": "~0.27.4"
+  }
 }

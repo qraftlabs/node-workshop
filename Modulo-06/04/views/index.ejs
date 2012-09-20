@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>The Node Movie Database</title>
+    <link rel="stylesheet" type="text/css" href="http://nodejs-workshop-arg.github.com/stylesheets/stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <small style="float: right;">
+            logged as <%= user.name %>
+        </small>
+        <h1>My movies</h1>
+        <ul>
+            <% movies.forEach(function(movie){ %>
+                <li>
+                    <a href="/movies/<%= movie.id %>"><%= movie.name %></a>
+                </li>
+            <% }) %>
+        </ul>
+
+    </div>
+</body>
+</html>
