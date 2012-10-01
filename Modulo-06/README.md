@@ -1,4 +1,4 @@
-# Módulo 5 - Express.js
+# Módulo 6 - Express.js
 
 ## Ejercicio 01
 
