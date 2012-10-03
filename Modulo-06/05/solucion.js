@@ -12,30 +12,18 @@ app.configure(function(){
   }));
 
   this.use(function(request, response, next){
-    if(!request.session.user){
+    if(!request.session.user) {
       request.session.user = {
         name: "jose",
-        loggedSince: +new Date
+        loggedSince: new Date
       };
+    } else {
+      request.session.user.loggedSince = new Date(request.session.user.loggedSince);
     }
+
     response.locals.user = request.session.user;
     next();
   });
-
-  /**
-   * Convert string date value to date object
-   *
-   * @api private
-   */
-
-  this.use(function(req, res, next){
-    var user = res.locals.user;
-    if (!user) return next();
-
-    user.loggedSince = new Date(user.loggedSince);
-    return next();
-  });
-
 });
 
 app.get("/movies/:movieId", function( request, response ){
