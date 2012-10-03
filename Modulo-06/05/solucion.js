@@ -8,20 +8,22 @@ app.configure(function(){
   
   app.use(express.cookieParser());
   app.use(express.session({
-    secret: 'the secret!'
+    secret: "the secret!"
   }));
 
   this.use(function(request, response, next){
-    if(!request.session.user){
+    if(!request.session.user) {
       request.session.user = {
         name: "jose",
-        loggedSince: new Date()
+        loggedSince: new Date
       };
+    } else {
+      request.session.user.loggedSince = new Date(request.session.user.loggedSince);
     }
+
     response.locals.user = request.session.user;
     next();
   });
-
 });
 
 app.get("/movies/:movieId", function( request, response ){
