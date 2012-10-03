@@ -8,18 +8,32 @@ app.configure(function(){
   
   app.use(express.cookieParser());
   app.use(express.session({
-    secret: 'the secret!'
+    secret: "the secret!"
   }));
 
   this.use(function(request, response, next){
     if(!request.session.user){
       request.session.user = {
         name: "jose",
-        loggedSince: new Date()
+        loggedSince: +new Date
       };
     }
     response.locals.user = request.session.user;
     next();
+  });
+
+  /**
+   * Convert string date value to date object
+   *
+   * @api private
+   */
+
+  this.use(function(req, res, next){
+    var user = res.locals.user;
+    if (!user) return next();
+
+    user.loggedSince = new Date(user.loggedSince);
+    return next();
   });
 
 });
