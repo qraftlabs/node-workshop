@@ -6,6 +6,7 @@
   "keywords": [],
   "dependencies": {
     "component/dropdown": "*",
+    "component/dialog": "*",
     "component/popover": "*"
   },
   "development": {},
