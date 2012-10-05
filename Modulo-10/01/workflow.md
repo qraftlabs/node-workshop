@@ -3,10 +3,9 @@
 
 Descrpcion general de la aplicación
 
-![Todo -
-Limtado}(http://f.cl.ly/items/1N1V132A1E261h2l2x26/bawk%20-%20todo%20-%2001.png)
-![Todo - Agregar](http://f.cl.ly/items/0s2F0P132U1D1q2H2H37/baws%20-%20todo%20-%2002.png)
+![Todo - Listado](http://f.cl.ly/items/1N1V132A1E261h2l2x26/bawk%20-%20todo%20-%2001.png)
 
+![Todo - Agregar](http://f.cl.ly/items/0s2F0P132U1D1q2H2H37/baws%20-%20todo%20-%2002.png)
 
 ## Express - nuestro framework de trabajo
 
