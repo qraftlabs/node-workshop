@@ -1,0 +1,15 @@
+{
+  "name": "todo",
+  "repo": "baws/todo",
+  "description": "Archivo principal",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/dropdown": "*",
+    "component/popover": "*"
+  },
+  "development": {},
+  "scripts": [
+    "index.js"
+  ]
+}
