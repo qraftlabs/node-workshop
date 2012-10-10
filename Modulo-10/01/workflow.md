@@ -28,7 +28,7 @@ Listado](http://f.cl.ly/items/0K1H0E2Z2A1A1f0U1P47/bawk%20-%20todo%20-%2001.png)
   1. run `PORT=8080 node app.js`
 
 
-## Nodemon - reload hanlder
+## Nodemon - reload handler
 
 ### Instalacion
 
