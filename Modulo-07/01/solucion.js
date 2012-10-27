@@ -1,3 +1,7 @@
+console.log("ADVERTENCIA!!!!!!!");
+console.log("para este ejercicio hace falta modificar movie.ejs también");
+console.log("ADVERTENCIA!!!!!!!");
+
 var express = require('express'),
   app     = express(), 
   server  = require('http').createServer(app), 
