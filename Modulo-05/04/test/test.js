@@ -3,28 +3,38 @@ var fs = require("fs");
 
 describe("sum file", function(){
   
-  beforeEach(function(done){
+  before(function(){
     this.fixtureFile = __dirname + "/fixture-1.txt";
-
-    //crea un archivo antes de cada test.
-    var lines = ["1", "100", "99"];
-    fs.writeFile(this.fixtureFile, lines.join("\n"), function(err){
-      done();
-    });
   });
 
   afterEach(function(done){
-    //elimina el archivo antes de cada test.
-    fs.unlink(this.fixtureFile, function(err){
-      done();
-    });
+    //elimina el archivo
+    fs.unlink(this.fixtureFile, done);
   });
 
-  it("should return the sume of all lines", function(done){
-    sumfile(this.fixtureFile, function(err, sum){
-      sum.should.be.eql(200);
-      done();
+  describe("when the file has numbers only", function(){
+
+    before(function(done){
+      var content = [1, 100, 99, -50].join("\n");
+      fs.writeFile(this.fixtureFile, content, done);
     });
+
+    it("should return the sum of all lines");
+  });
+
+  describe("when the file contains symbols", function(){
+
+    before(function(done){
+      var content = [1, 100, 99, -50, "+", "-", "*"].join("\n");
+      fs.writeFile(this.fixtureFile, content, done);
+    });
+
+    it("should sum NaN as -1"); 
+    //tip isNaN(...)
+
+    it("should sum using a symbols map"); 
+    //usar segundo parametro opcional para symbol map.
+    //ej: {"+": 5, "-": -5, "*": 2}
   });
 
 });
