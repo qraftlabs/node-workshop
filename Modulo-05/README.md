@@ -25,6 +25,8 @@ Tip: el objetivo de este ejercicio es utilizar el debugger más alla de lo trivi
 
 El objetivo de este ejercicio es arreglar los 3 tests que fallan del ejemplo de fizzbuzz. Para ejecutar los tests, accede a la carpeta Modulo-05/03 y ejecuta el comando: ```npm test```.
 
-# Ejercicio 04
+## Ejercicio 04
 
-Verificar por que falla el test asíncrono de la carpeta 04.
+Implementar los 3 tests en ```test.js``` pendientes siguiendo las descripciones de las llamadas al metodo ```it``` e implementar la funcionalidad de ```sumfile.js``` para pasar los tests.
+
+En este Ejercicio utilizaremos tests asíncronos.

@@ -1,2 +1,3 @@
 node_modules
 *.log/Modulo-04/04/node_modules/request/aws.js
+npm-debug.log
