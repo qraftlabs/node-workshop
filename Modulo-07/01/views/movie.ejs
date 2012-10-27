@@ -1,0 +1,79 @@
+<% include includes/head %>
+
+<input id="movieId" type="hidden" value="<%= id %>">
+
+<div class="section">
+    <h2><%= name %></h2>
+    <p>
+        <%= synopsis %>
+    </p>
+</div>
+
+<div class="section">
+    <h2>Comments</h2>
+    <ul id="comments">
+    <% comments.forEach(function (comment){ %>
+        <li>
+            <strong><%= comment.user %></strong>: <%= comment.text %>
+        </li>
+    <% }) %>
+    </ul>
+
+    <h2>Leave a comment</h2>
+    <form id="new-comment" method="POST" action="comments">
+        <input id="new-comment-user" 
+                name="user" 
+                type="text" 
+                required
+                placeholder="your name" /> 
+        <br>
+        <input id="new-comment-text" 
+                name="text" 
+                placeholder="your comment"
+                required
+                style="min-width: 400px; min-"></input> 
+        <br>
+        <input type="submit" class="btn">
+    </form>
+</div>
+
+<script type="text/javascript">
+    function appendNewComment(comment) {
+        $('#comments')
+            .append('<li><strong>' + 
+                        comment.user + 
+                        '</strong>: ' + 
+                        comment.text + '</li>');
+    }
+
+    $('#new-comment').submit(function (e) {
+        var comment = {
+            user: $('#new-comment-user').val(),
+            text: $('#new-comment-text').val()
+        };
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: 'comments',
+            data: JSON.stringify(comment),
+            contentType: 'application/json',
+            success: function (){
+                //hint hint
+                appendNewComment(comment);
+                //////////
+                
+                $('#new-comment-text').val('');
+                $('html, body').animate({
+                    scrollTop: $(this).offset().top
+                }, 2000);
+                
+            }
+        });
+        return false;
+    });
+
+    //subscribeme aquí
+    //var socket = io.connect();
+</script>
+
+<% include includes/foot %>

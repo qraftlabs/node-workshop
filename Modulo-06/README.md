@@ -12,7 +12,7 @@ Tips: leer el [api de response de express](http://expressjs.com/api.html)
 
 ## Ejercicio 03
 
-En este ejercicio hay dos rutas, la raíz ```/``` debe mostrar una lista de todas las películas disponibles en el catálogo. La segunda ruta es ```/movies/<código>``` y debería mostrar los detalles de las películas.
+En este ejercicio hay dos rutas, la raíz ```/``` debe mostrar una lista de todas las películas disponibles en el catálogo. La segunda ruta es ```/movies/<código>``` y debería mostrar los detalles de una película.
 
 En este ejercicio las views ya han sido creadas, analizarlas y completar el código que falta para que esta aplicación funcione correctamente.
 
