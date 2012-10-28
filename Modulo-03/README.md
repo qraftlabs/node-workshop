@@ -8,7 +8,7 @@ En este ejercicio leeremos un archivo utilizando un ReadStream. Para ellos utili
 
 ## Ejercicio 02
 
-En este ejercicio utilizaremos el método pipe de los streams para conectar un stream de lectura al standard output (process.stdout).
+En este ejercicio utilizaremos el método pipe de los streams para conectar un stream de lectura (fs.createReadStream) a la respuesta de un http server (response).
 
 ## Ejercicio 03
 

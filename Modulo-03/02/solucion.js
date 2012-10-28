@@ -1,4 +1,9 @@
 var fs = require("fs");
-var readStream = fs.createReadStream(__dirname + "/index.html");
+var http = require("http");
 
-readStream.pipe(process.stdout);
+http.createServer(function (request, response) {
+  fs.createReadStream(__dirname + "/index.html")
+    .pipe(response);
+}).listen(8080, function(){
+  console.log("listening in http://localhost:8080");
+});
