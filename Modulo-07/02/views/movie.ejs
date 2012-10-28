@@ -1,7 +1,5 @@
 <% include includes/head %>
 
-<input id="movieId" type="hidden" value="<%= id %>">
-
 <div class="section">
     <h2><%= name %></h2>
     <p>
@@ -70,7 +68,7 @@
     });
 
     var socket = io.connect();
-    socket.on('new-comment-' + $("#movieId").val(), function (comment) {
+    socket.on('new-comment', function (comment) {
         appendNewComment(comment);
     }).on('usercount', function (usercount) {
         $('#usercount').html(usercount);

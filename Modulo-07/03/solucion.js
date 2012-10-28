@@ -33,15 +33,27 @@ app.get('/', function (request, response){
 app.post('/movies/:movieId/comments', function (request, response) {
   request.movie.comments.push(request.body);
   response.redirect("/movies/" + request.movie.id + "/");
-  io.sockets.emit('new-comment', request.body);
+  
+  io.sockets
+    .in(request.movie.name)
+    .emit('new-comment', request.body);
 });
 
-io.sockets.on('connection', function (socket) {
-    io.sockets.emit('usercount', io.sockets.clients().length);
+var usercount = {};
 
-    socket.on('disconnect', function () {
-        io.sockets.emit('usercount', io.sockets.clients().length - 1);
-    });
+io.sockets.on('connection', function (socket) {
+  var room;
+  socket.on('join room', function (r) {
+    room = r;
+    socket.join(room);
+    io.sockets.emit('usercount', io.sockets.clients(room).length);
+  });
+
+
+  socket.on('disconnect', function () {
+    socket.leave(room);
+    io.sockets.emit('usercount', io.sockets.clients(room).length);
+  });
 });
 
 server.listen(8001, function(){

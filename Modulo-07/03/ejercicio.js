@@ -37,11 +37,13 @@ app.post('/movies/:movieId/comments', function (request, response) {
 });
 
 io.sockets.on('connection', function (socket) {
-    io.sockets.emit('usercount', io.sockets.clients().length);
+  var room; //cuak!
+    
+  io.sockets.emit('usercount', io.sockets.clients().length);
 
-    socket.on('disconnect', function () {
-        io.sockets.emit('usercount', io.sockets.clients().length - 1);
-    });
+  socket.on('disconnect', function () {
+    io.sockets.emit('usercount', io.sockets.clients().length - 1);
+  });
 });
 
 server.listen(8001, function(){

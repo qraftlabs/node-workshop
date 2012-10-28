@@ -1,5 +1,7 @@
 <% include includes/head %>
 
+<input id="movieName" type="hidden" value="<%= name %>">
+
 <div class="section">
     <h2><%= name %></h2>
     <p>
@@ -17,7 +19,8 @@
     <% }) %>
     </ul>
 
-    <h2>Leave a comment</h2>
+    <h2>Leave a comment </h2>
+    <p>online users: <span id="usercount"></span></p>
     <form id="new-comment" method="POST" action="comments">
         <input id="new-comment-user" 
                 name="user" 
@@ -56,10 +59,6 @@
             data: JSON.stringify(comment),
             contentType: 'application/json',
             success: function (){
-                //hint hint
-                appendNewComment(comment);
-                //////////
-                
                 $('#new-comment-text').val('');
                 $('html, body').animate({
                     scrollTop: $(this).offset().top
@@ -70,8 +69,14 @@
         return false;
     });
 
-    //subscribeme aquí
-    //var socket = io.connect();
+    var socket = io.connect();
+    socket.on('connect', function () {
+        socket.emit('join room', $("#movieName").val());
+    }).on('new-comment', function (comment) {
+        appendNewComment(comment);
+    }).on('usercount', function (usercount) {
+        $('#usercount').html(usercount);
+    });
 </script>
 
 <% include includes/foot %>

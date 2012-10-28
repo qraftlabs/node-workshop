@@ -37,13 +37,13 @@ app.get('/', function (request, response){
 app.post('/movies/:movieId/comments', function (request, response) {
   request.movie.comments.push(request.body);
   response.redirect("/movies/" + request.movie.id + "/");
-  io.sockets.emit('new-comment-' + request.movie.id, request.body);
+  io.sockets.emit('new-comment', request.body);
 
   /*
     código client side
 
     var socket = io.connect();
-    socket.on('new-comment-' + $("#movieId").val(), function (comment) {
+    socket.on('new-comment', function (comment) {
         appendNewComment(comment);
     });
 
