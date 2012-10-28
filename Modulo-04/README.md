@@ -58,7 +58,7 @@ npm link twitter-foo
 
 Observa que en 05/node_modules haya una carpeta llamda twitter-foo. Esta carpeta es un link simbólico a la carpeta 04, cualquier modificación que hagas en alguna de las dos se vera automáticamente reflejada en el otro.
 
-## Ejercicio 06
+## Ejercicio 06 (saltear este ejercicio en windows)
 
 Si observas el package.json que se encuentra en 05 (twitter-cli), veras que tiene un elemento bin: 
 
@@ -66,7 +66,7 @@ Si observas el package.json que se encuentra en 05 (twitter-cli), veras que tien
  "bin": "bin/main"
 ```
 
-main es un archivo ejecutable que define el interprete como node.js. Esto significa que puede instalarse globalmente y ejecutarse como cualquier otro utilidad de línea de comandos. Si estuviera en npm lo podrías instalarlo así:
+main es un archivo ejecutable que define el interprete como node.js. Esto significa que puede instalarse globalmente y ejecutarse como cualquier otra utilidad de línea de comandos. Si estuviera en npm lo podrías instalar así:
 
 ```bash
 npm install twitter-cli -g
