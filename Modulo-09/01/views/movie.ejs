@@ -1,0 +1,82 @@
+<% include includes/head %>
+
+<input id="movieName" type="hidden" value="<%= name %>">
+
+<div class="section">
+    <h2><%= name %></h2>
+    <p>
+        <%= synopsis %>
+    </p>
+</div>
+
+<div class="section">
+    <h2>Comments</h2>
+    <ul id="comments">
+    <% comments.forEach(function (comment){ %>
+        <li>
+            <strong><%= comment.user %></strong>: <%= comment.text %>
+        </li>
+    <% }) %>
+    </ul>
+
+    <h2>Leave a comment </h2>
+    <p>online users: <span id="usercount"></span></p>
+    <form id="new-comment" method="POST" action="comments">
+        <input id="new-comment-user" 
+                name="user" 
+                type="text" 
+                required
+                placeholder="your name" /> 
+        <br>
+        <input id="new-comment-text" 
+                name="text" 
+                placeholder="your comment"
+                required
+                style="min-width: 400px; min-"></input> 
+        <br>
+        <input type="submit" class="btn">
+    </form>
+</div>
+
+<script type="text/javascript">
+    function appendNewComment(comment) {
+        $('#comments')
+            .append('<li><strong>' + 
+                        comment.user + 
+                        '</strong>: ' + 
+                        comment.text + '</li>');
+    }
+
+    $('#new-comment').submit(function (e) {
+        var comment = {
+            user: $('#new-comment-user').val(),
+            text: $('#new-comment-text').val()
+        };
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: 'comments',
+            data: JSON.stringify(comment),
+            contentType: 'application/json',
+            success: function (){
+                $('#new-comment-text').val('');
+                $('html, body').animate({
+                    scrollTop: $(this).offset().top
+                }, 2000);
+                
+            }
+        });
+        return false;
+    });
+
+    var socket = io.connect();
+    socket.on('connect', function () {
+        socket.emit('join room', $("#movieName").val());
+    }).on('new-comment', function (comment) {
+        appendNewComment(comment);
+    }).on('usercount', function (usercount) {
+        $('#usercount').html(usercount);
+    });
+</script>
+
+<% include includes/foot %>

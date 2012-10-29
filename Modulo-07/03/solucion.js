@@ -18,7 +18,7 @@ app.param('movieId', function(request, response, next, movieId){
     request.movie = movie;
     next();
   }else{
-    request.send(404);
+    response.send(404);
   }
 });
 
@@ -38,8 +38,6 @@ app.post('/movies/:movieId/comments', function (request, response) {
     .in(request.movie.name)
     .emit('new-comment', request.body);
 });
-
-var usercount = {};
 
 io.sockets.on('connection', function (socket) {
   var room;

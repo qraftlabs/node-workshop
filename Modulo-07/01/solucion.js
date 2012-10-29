@@ -22,7 +22,7 @@ app.param('movieId', function(request, response, next, movieId){
     request.movie = movie;
     next();
   }else{
-    request.send(404);
+    response.send(404);
   }
 });
 

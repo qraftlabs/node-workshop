@@ -1,0 +1,20 @@
+<% include includes/head %>
+
+<div class="section">
+    <h2>New Movie</h2>
+    <form method="POST" action="/movies">
+        <input name="name" 
+               type="text" 
+               required
+               placeholder="movie name" /> 
+        <br>
+        <textarea name="synopsis" 
+                placeholder="synopsis"
+                required
+                style="min-width: 400px;"></textarea> 
+        <br>
+        <input type="submit" class="btn">
+    </form>
+</div>
+
+<% include includes/foot %>

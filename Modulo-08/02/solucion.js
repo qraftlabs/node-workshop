@@ -1,9 +1,8 @@
 var express = require('express'),
   app     = express(), 
-  server  = require('http').createServer(app), 
-  io      = require('socket.io').listen(server);
+  server  = require('http').createServer(app);
 
-var db = require('./moviedb');
+var movies = require("./lib/movies.solucion");
 
 app.configure(function(){
   this.set('view engine', 'ejs');
@@ -13,13 +12,17 @@ app.configure(function(){
 
 //middleware para mapear todos los parametros movieId
 app.param('movieId', function(request, response, next, movieId){
-  var movie = db.getById(request.params.movieId);
-  if(movie){
-    request.movie = movie;
-    next();
-  }else{
-    response.send(404);
-  }
+  movies.getById(request.params.movieId, function (err, movie) {
+    if(err){
+      return response.send(500, err);
+    }
+    if(movie){
+      request.movie = movie;
+      next();
+    }else{
+      response.send(404);
+    }
+  });
 });
 
 app.get('/movies/:movieId', function (request, response) {
@@ -27,15 +30,17 @@ app.get('/movies/:movieId', function (request, response) {
 });
 
 app.get('/', function (request, response){
-  response.render('index', { movies: db });
+  movies.getAll(function (err, movies) {
+    if(err){
+      return response.send(500, err);
+    }
+    response.render('index', { movies: movies });
+  });
 });
 
 app.post('/movies/:movieId/comments', function (request, response) {
   request.movie.comments.push(request.body);
   response.redirect("/movies/" + request.movie.id + "/");
-
-  //emiteme aquí
-
 });
 
 server.listen(8001, function(){

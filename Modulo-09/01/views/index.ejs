@@ -1,0 +1,14 @@
+<% include includes/head %>
+
+<div class="section">
+    <h2>top movies</h2>
+    <ul>
+        <% movies.forEach(function(movie){ %>
+            <li>
+                <a href="/movies/<%= movie._id %>/"><%= movie.name %></a>
+            </li>
+        <% }) %>
+    </ul>
+</div>
+
+<% include includes/foot %>
