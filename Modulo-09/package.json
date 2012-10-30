@@ -1,0 +1,23 @@
+{
+  "name": "node-movie-db",
+  "version": "0.0.1-3",
+  "description": "Ejemplo final del workshop de node.js en buenos aires.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": "",
+  "author": "Node.js Workshop",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~3.0.0rc4",
+    "ejs": "~0.8.3",
+    "socket.io": "~0.9.10",
+    "mongodb": "~1.1.11"
+  },
+  "subdomain": "moviedb-sample1",
+  "engines": {
+    "node": "0.8.x"
+  }
+}
