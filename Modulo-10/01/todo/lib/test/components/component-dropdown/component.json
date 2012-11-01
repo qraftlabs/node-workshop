@@ -1,0 +1,23 @@
+{
+  "name": "dropdown",
+  "description": "Dropdown component",
+  "repo": "component/dropdown",
+  "author": "Damian Suarez <rdsuarez@gmail.com>",
+  "version": "0.1.0",
+  "keywords": [
+    "dropdown",
+    "component"
+  ],
+  "dependencies": {
+    "component/emitter": "*",
+    "component/jquery": "*",
+    "component/classes": "*",
+    "component/menu": "*"
+  },
+  "styles": [
+    "dropdown.css"
+  ],
+  "scripts": [
+    "index.js"
+  ]
+}

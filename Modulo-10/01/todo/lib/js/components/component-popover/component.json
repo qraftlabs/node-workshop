@@ -1,0 +1,22 @@
+{
+  "name": "popover",
+  "description": "Popover component",
+  "version": "0.0.1",
+  "keywords": [
+    "toolpopover",
+    "popover",
+    "ui"
+  ],
+  "dependencies": {
+    "component/tip": "*",
+    "component/jquery": "*"
+  },
+  "development": {
+    "component/aurora-popover": "*"
+  },
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "repo": "https://raw.github.com/component/popover"
+}

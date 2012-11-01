@@ -1,0 +1,21 @@
+{
+  "name": "overlay",
+  "description": "Overlay component",
+  "version": "0.0.3",
+  "keywords": [
+    "overlay",
+    "ui"
+  ],
+  "dependencies": {
+    "component/emitter": "*",
+    "component/jquery": "*"
+  },
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "overlay.css"
+  ],
+  "repo": "https://raw.github.com/component/overlay"
+}
