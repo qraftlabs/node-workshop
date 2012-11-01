@@ -1,13 +1,18 @@
 var mongodb = require("mongodb"), 
     cachedDb;
 
-var dbConnectionSettings = {
-  host: "ds041347.mongolab.com",
-  port: 41347,
-  name: "movies",
-  user: "mmuser",
-  pass: "mm123123"
+var dbConnectionSettings = process.env.db_host ? {
+  host: process.env.db_host,
+  port: parseInt(process.env.db_port, 10),
+  name: process.env.db_name,
+  user: process.env.db_user,
+  pass: process.env.db_pass
+} : {
+  host: "localhost",
+  port: 27017,
+  name: "movies"
 };
+
 
 var db = new mongodb.Db(dbConnectionSettings.name,
   new mongodb.Server(dbConnectionSettings.host, dbConnectionSettings.port, 
