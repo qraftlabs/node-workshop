@@ -49,7 +49,7 @@ npm link
 ```
 * Nota: es posible que para hacer ```npm link``` sin argumentos en tu sistema, necesites hacerlo con privilegios elevados. Si es así, intenta ```sudo npm link``` o lo que corresponda a tu sistema.s*
 
-Luego accede a 04, y ejecuta:
+Luego accede a 05, y ejecuta:
 
 ```bash
 npm install
