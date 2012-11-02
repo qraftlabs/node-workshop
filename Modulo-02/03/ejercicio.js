@@ -6,6 +6,7 @@ function Timer(interval){
   var intervalId;
 
   this.start = function(){
+    var self = this;
     //######### definir aquí! #########
   };
 
