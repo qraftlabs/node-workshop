@@ -34,7 +34,7 @@ En este ejercicio vamos a aprender a utilizar la herramienta ```npm```. La consi
 }
 ```
 
-Tip: utiliza ```npm init``` y ```npm install xxxx``` 
+Tip: utiliza ```npm init``` y ```npm install xxxx --save``` 
 
 ## Ejercicio 05
 
