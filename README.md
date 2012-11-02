@@ -86,7 +86,7 @@ Compartir código y reusar código de otros. [ppt](https://docs.google.com/prese
 
 ### Module 5 Debugging & Testing
 
-Depurar y testear código javascript en node.js. [ppt](https://docs.google.com/presentation/d/1zaPEAhF5uXlEnkpGjTya7c_HVrnpuJqOZblYJO4AuA8/edit)
+Depurar y testear código javascript en node.js. [ppt](https://docs.google.com/presentation/d/19zFZzYRX4Kttz6CS6wKzF9hCiNT4zEUIq9Q9gV-unCo/edit)
 
 ### Module 6 Express
 
