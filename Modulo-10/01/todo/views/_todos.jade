@@ -1,0 +1,4 @@
+ul
+  each todo in todos
+    li= todo.text
+      span - (#{formatDate(todo.created_at)})
