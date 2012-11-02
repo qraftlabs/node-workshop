@@ -67,40 +67,40 @@ Los archivos markdown se pueden leer en cualquier editor o desde el sitio web de
 
 ### Module 1 Introducción 
 
-Introducción a node.js, non-blocking IO y el event loop. (ppt)[https://docs.google.com/presentation/d/1bogZqj7C7NDT-H7GJBZV9Qfg2PcLmrzIaRvdqUtt360/edit]
+Introducción a node.js, non-blocking IO y el event loop. [ppt](https://docs.google.com/presentation/d/1bogZqj7C7NDT-H7GJBZV9Qfg2PcLmrzIaRvdqUtt360/edit)
 
 
 ### Module 2 Events
 
-Entender la naturaleza de los eventos en node, crear, escuchar y emitir. (ppt)[https://docs.google.com/presentation/d/1IlQnTMkrn2hod9UmNLyA6DRrwIhIOLz4l6rpsDzKqGw/edit]
+Entender la naturaleza de los eventos en node, crear, escuchar y emitir. [ppt](https://docs.google.com/presentation/d/1IlQnTMkrn2hod9UmNLyA6DRrwIhIOLz4l6rpsDzKqGw/edit)
 
 
 ### Module 3 Streams
 
-Entender los streams en node.js como parte integral y lo que hace real-time posible. (ppt)[https://docs.google.com/presentation/d/1e2j4OcaKGuukFuIq7AQOLVBUS_B2inxvTW6BnCuBsyM/edit]
+Entender los streams en node.js como parte integral y lo que hace real-time posible. [ppt](https://docs.google.com/presentation/d/1e2j4OcaKGuukFuIq7AQOLVBUS_B2inxvTW6BnCuBsyM/edit)
 
 ### Module 4 Modules
 
-Compartir código y reusar código de otros. (ppt)[https://docs.google.com/presentation/d/1zaPEAhF5uXlEnkpGjTya7c_HVrnpuJqOZblYJO4AuA8/edit]
+Compartir código y reusar código de otros. [ppt](https://docs.google.com/presentation/d/1zaPEAhF5uXlEnkpGjTya7c_HVrnpuJqOZblYJO4AuA8/edit)
 
 
 ### Module 5 Debugging & Testing
 
-Depurar y testear código javascript en node.js. (ppt)[https://docs.google.com/presentation/d/1zaPEAhF5uXlEnkpGjTya7c_HVrnpuJqOZblYJO4AuA8/edit]
+Depurar y testear código javascript en node.js. [ppt](https://docs.google.com/presentation/d/1zaPEAhF5uXlEnkpGjTya7c_HVrnpuJqOZblYJO4AuA8/edit)
 
 ### Module 6 Express
 
-Usando el framework express.js para construir aplicaciones web. (ppt)[https://docs.google.com/presentation/d/167HCSlpudqFKUn5CjPfp6oPBqz5EEfEAi2nXDOqp8Og/edit]
+Usando el framework express.js para construir aplicaciones web. [ppt](https://docs.google.com/presentation/d/167HCSlpudqFKUn5CjPfp6oPBqz5EEfEAi2nXDOqp8Og/edit)
 
 ### Module 7 Socket.io
 
-Construir aplicaciones realtime con socket.io. (ppt)[https://docs.google.com/presentation/d/1HY53l4jnCAIBIXkBRIVnQP3XCGonYiEo3G1BmfdpT4c/edit]
+Construir aplicaciones realtime con socket.io. [ppt](https://docs.google.com/presentation/d/1HY53l4jnCAIBIXkBRIVnQP3XCGonYiEo3G1BmfdpT4c/edit)
 
 ### Module 8 Persistence
 
-Usando mongodb como persistencia de documentos. (ppt)[https://docs.google.com/presentation/d/1SGQGg7P9gfDzbs_nqLDSqczu6DsNUo0pMgDVUDGqQmI/edit]
+Usando mongodb como persistencia de documentos. [ppt](https://docs.google.com/presentation/d/1SGQGg7P9gfDzbs_nqLDSqczu6DsNUo0pMgDVUDGqQmI/edit)
 
 
 ### Module 9 Deployment
 
-Como deployar aplicaciones node.js a la nube. (ppt)[https://docs.google.com/presentation/d/1AhQ-GRpye7ray17wxvSAJPFycIi4R7Q3UFWOby5pqtg/edit]
+Como deployar aplicaciones node.js a la nube. [ppt](https://docs.google.com/presentation/d/1AhQ-GRpye7ray17wxvSAJPFycIi4R7Q3UFWOby5pqtg/edit)
