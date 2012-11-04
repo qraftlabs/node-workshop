@@ -55,7 +55,7 @@
         e.preventDefault();
         $.ajax({
             type: 'POST',
-            url: 'comments',
+            url: window.location.pathname  + '/comments',
             data: JSON.stringify(comment),
             contentType: 'application/json',
             success: function (){

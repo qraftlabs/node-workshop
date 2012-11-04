@@ -11,6 +11,15 @@ app.configure(function(){
   this.use(express.bodyParser());
 });
 
+io.configure(function(){
+  var transports = process.env.socketiotransports
+  if (transports) {
+    console.log('set transports ' + transports);
+    io.set('transports', transports.split(','));
+    io.set("polling duration", 10); 
+  }
+});
+
 //middleware para mapear todos los parametros movieId
 app.param('movieId', function(request, response, next, movieId){
   movies.getById(request.params.movieId, function (err, movie) {
