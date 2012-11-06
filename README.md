@@ -1,6 +1,6 @@
 ## Introducción
 
-Este es el repositorio del Workshop de Introducción A Aplicaciones Web RealTime con NODE.JS.
+Este es el repositorio del [Buenos Aires node.js workshop](http://workshopba.jit.su).
 
 Este repositorio contiene ejemplos y explicaciones para cada uno de los 9 módulos del workshop.
 
